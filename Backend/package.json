@@ -1,0 +1,18 @@
+{
+  "name": "todos-json-server",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mypum/todos-json-server.git"
+  },
+  "author": "Thongchai Kitiyanantawong",
+  "license": "MIT",
+  "dependencies": {
+    "json-server": "^0.16.2"
+  }
+}
