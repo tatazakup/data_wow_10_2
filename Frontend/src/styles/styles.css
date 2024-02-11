@@ -1,0 +1,85 @@
+@import url(typography.css);
+@import url(font.css);
+@import url(utility.css);
+@import url(checkbox.css);
+@import url(select.css);
+@import url(input.css);
+@import url(dropdown.css);
+@import url(button.css);
+@import url(progress.css);
+
+#root {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+
+  width: 100dvw;
+  height: 100dvh;
+  background-color: #f5f5f5;
+
+  --bg-white: #ffffff;
+  --bg-red: #e07c7c;
+  --bg-gray: #f5f5f5;
+  --bg-slatelavender: #9796a8;
+  --bg-deepindigo: #585292;
+
+  --text-white: #ffffff;
+  --text-danger: #e07c7c;
+  --text-black: #000000;
+  --text-softpink: #ebb9b8;
+  --text-darkgray: #a9a9a9;
+  --text-place-holder: #bcbcbc;
+
+  --checkbox-bg: #ffffff;
+  --checkbox-border: #585292;
+  --checkbox-checked: #585292;
+
+  --border-radius: 1rem;
+}
+
+body {
+  margin: 0;
+}
+
+/* Variable */
+.bg-white {
+  background-color: var(--bg-white);
+}
+.bg-red {
+  background-color: var(--bg-red);
+}
+.bg-gray {
+  background-color: var(--bg-gray);
+}
+.text-white {
+  color: var(--text-white);
+}
+.text-black {
+  color: var(--text-black);
+}
+.text-danger {
+  color: var(--text-danger);
+}
+.text-softpink {
+  color: var(--text-softpink);
+}
+.text-darkgray {
+  color: var(--text-darkgray);
+}
+
+#app-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 5%);
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 400px) {
+    width: 80%;
+  }
+
+  @media screen and (min-width: 800px) {
+    max-width: 700px;
+  }
+}

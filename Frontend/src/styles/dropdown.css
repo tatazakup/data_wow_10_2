@@ -1,0 +1,30 @@
+#dropdown-contain {
+  opacity: 1;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  background-color: var(--bg-white);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: var(--border-radius);
+}
+
+#dropdown-contain > div {
+  cursor: pointer;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.dropdown {
+  align-self: center;
+}
+
+.dropdown > .dot {
+  display: flex;
+  gap: 0.1rem;
+  cursor: pointer;
+}
+
+.dropdown > .dot > div {
+  width: 7px;
+  height: 7px;
+  background-color: var(--bg-slatelavender);
+  border-radius: 99px;
+}

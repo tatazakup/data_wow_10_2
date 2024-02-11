@@ -2,8 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "@pages/MainPage/MainPage";
 import { AppLayout } from "@layouts/AppLayout/AppLayout";
-import "./styles/index.css";
+import "./styles/styles.css";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { DropdownProvider } from "@providers/DropdownProvider";
 
 export const CoreProvider: React.FC = () => {
   const [queryClient] = React.useState(() => {
@@ -20,9 +21,11 @@ export const CoreProvider: React.FC = () => {
   return (
     <React.StrictMode>
       <QueryClientProvider client={queryClient}>
-        <AppLayout>
-          <App />
-        </AppLayout>
+        <DropdownProvider>
+          <AppLayout>
+            <App />
+          </AppLayout>
+        </DropdownProvider>
       </QueryClientProvider>
     </React.StrictMode>
   );

@@ -1,0 +1,58 @@
+/*Styling Selectbox*/
+.selection {
+  min-width: 110px;
+  display: inline-block;
+  transition: all 0.5s ease;
+  position: relative;
+  font-size: 14px;
+  color: #474747;
+  height: 100%;
+  text-align: left;
+}
+.selection > .select {
+  cursor: pointer;
+  display: block;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: var(--border-radius);
+}
+.selection > .select > i {
+  font-size: 13px;
+  color: #888;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  float: right;
+  line-height: 20px;
+}
+.selection .space {
+  height: 10px;
+}
+.selection .dropdown-menu {
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  left: 0;
+  margin-top: 1px;
+  box-shadow: 0 1px 2px rgb(204, 204, 204);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  display: none;
+  max-height: 144px;
+  overflow-y: auto;
+  z-index: 9;
+}
+.selection .dropdown-menu li {
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.selection .dropdown-menu {
+  padding: 0;
+  list-style: none;
+}
+.selection .dropdown-menu li:hover {
+  background-color: #f2f2f2;
+}
+.selection .dropdown-menu li:active {
+  background-color: #e2e2e2;
+}

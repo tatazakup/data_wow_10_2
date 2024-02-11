@@ -1,0 +1,33 @@
+p {
+  padding: 0;
+  margin: 0;
+
+  &.roboto {
+    font-family: "Roboto", sans-serif;
+  }
+
+  &.header-1 {
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  &.header-2 {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  &.body {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  &.button {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  &.select {
+    font-size: 13px;
+    font-weight: 400;
+  }
+}
